@@ -6,7 +6,7 @@
 # include <time.h>
 # include <stdio.h>
 
-/* asagida deyerlerle cavab alinacag
+/** asagida deyerlerle cavab alinacag
 * burada if-den istifade etmek lazimm gelecek
 */
 
