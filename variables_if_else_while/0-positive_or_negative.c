@@ -14,22 +14,22 @@
 int main (void){
 
 
-int a;
+int n;
 
 srand(time(NULL));
 
-a = rand() - RAND_MAX / 2;
+n = rand() - RAND_MAX / 2;
 
-if(a>0){
-printf("%d is positive\n", a);
+if(n>0){
+printf("%d is positive\n", n);
 }
 
-else if(a < 0){
-printf("%d is negative\n",a);
+else if(n < 0){
+printf("%d is negative\n",n);
 }
 
 else
-printf("%d is zero\n", a);
+printf("%d is zero\n", n);
 
 return(0);
 
