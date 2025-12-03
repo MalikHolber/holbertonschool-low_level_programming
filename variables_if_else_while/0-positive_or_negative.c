@@ -21,14 +21,15 @@ srand(time(null));
 a = rand() - RAND_MAX / 2;
 
 if(a>0){
-printf("%d is positive", a)
+printf("%d is positive", a);
 }
 
 else if(a == 0){
-printf("%d is a zero",a}
+printf("%d is a zero",a);
+}
 
 else
-printf("%d is a negative", a)X
+printf("%d is a negative", a);
 
 return(0);
 
