@@ -1,14 +1,36 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+/* malikin kodu
+* duzgun yazilmisdir haa
+*/
 
-/* betty style doc for function main goes there */
-int main(void)
-{
-	int n;
+# include <stdlib.h>
+# include <time.h>
+# include <stdio.h>
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	return (0);
+/* asagida deyerlerle cavab alinacag
+* burada if-den istifade etmek lazimm gelecek
+*/
+
+
+int main (void){
+
+
+int a;
+
+srand(time(null);
+
+a = rand() - RAND_MAX / 2;
+
+if(a>0){
+printf("%d is positive", a)
+}
+
+else if(a == 0){
+printf("%d is a zero",a}
+
+else{
+printf("%d is a negative", a)}
+
+return(0);
+
+
 }
