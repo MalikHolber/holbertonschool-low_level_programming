@@ -1,4 +1,3 @@
-
 /*
  * File: 0-positive_or_negative.c
  * Auth: Malik Atlukhanov
@@ -16,7 +15,7 @@
 */
 
 
-int main (void){
+int main(void){
 
 int n;
 
@@ -24,12 +23,12 @@ srand(time(NULL));
 
 n = rand() - RAND_MAX / 2;
 
-if( n > 0)
+if(n > 0)
 printf("%d is positive\n", n);
 
 
 else if(n < 0)
-printf("%d is negative\n",n);
+printf("%d is negative\n", n);
 
 
 else
