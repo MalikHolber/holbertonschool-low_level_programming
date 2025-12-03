@@ -1,13 +1,18 @@
-/* malikin kodu
-* duzgun yazilmisdir haa
-*/
+
+/*
+ * File: 0-positive_or_negative.c
+ * Auth: Malik Atlukhanov
+ */
 
 # include <stdlib.h>
 # include <time.h>
 # include <stdio.h>
 
-/** asagida deyerlerle cavab alinacag
-* burada if-den istifade etmek lazimm gelecek
+/**
+ * main - Prints a random number and states whether
+ *        it is positive, negative, or zero.
+ *
+ * Return: Always 0.
 */
 
 
