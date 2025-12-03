@@ -16,7 +16,7 @@ int main (void){
 
 int a;
 
-srand(time(null);
+srand(time(null));
 
 a = rand() - RAND_MAX / 2;
 
@@ -27,8 +27,8 @@ printf("%d is positive", a)
 else if(a == 0){
 printf("%d is a zero",a}
 
-else{
-printf("%d is a negative", a)}
+else
+printf("%d is a negative", a)X
 
 return(0);
 
