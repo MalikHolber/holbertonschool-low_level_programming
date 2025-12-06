@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "holberton.h"
 
 /**
  * print_alphabet - Prints the alphabet in lowercase.
