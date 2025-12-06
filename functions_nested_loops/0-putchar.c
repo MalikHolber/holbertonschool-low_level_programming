@@ -2,6 +2,6 @@
 #include <stdlib.h>
 
 int main(void){
-printf("_putchar\n");
+_putchar("M");
 return 0;
 }
