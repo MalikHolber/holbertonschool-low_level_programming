@@ -1,24 +1,36 @@
-/*
- * File: 7-print_last_digit.c
- * Auth: Brennan D Baraban
- */
-
 #include "main.h"
 
 /**
- * print_last_digit - Prints the last digit of a number.
- * @n: The number in question.
- *
- * Return: Value of the last digit.
+ * print_to_98 - prints all natural numbers from n to 98
+ * @n: starting number
  */
-int print_last_digit(int n)
+void print_to_98(int n)
 {
-	int last_digit = n % 10;
-
-	if (last_digit < 0)
-		last_digit *= -1;
-
-	_putchar(last_digit + '0');
-
-	return (last_digit);
+    if (n <= 98)
+    {
+        while (n <= 98)
+        {
+            _putchar('0' + n % 10); // sadə versiya
+            if (n != 98)
+            {
+                _putchar(',');
+                _putchar(' ');
+            }
+            n++;
+        }
+    }
+    else
+    {
+        while (n >= 98)
+        {
+            _putchar('0' + n % 10);
+            if (n != 98)
+            {
+                _putchar(',');
+                _putchar(' ');
+            }
+            n--;
+        }
+    }
+    _putchar('\n');
 }
