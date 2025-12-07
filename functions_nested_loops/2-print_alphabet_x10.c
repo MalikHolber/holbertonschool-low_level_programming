@@ -1,30 +1,22 @@
+/*
+ * File: 2-print_alphabet_x10.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Prints the alphabet 10 times in lowercase,
- * followed by a new line after each sequence.
- *
- * This function uses a nested loop structure:
- * - The outer loop iterates 10 times (for the 10 repetitions).
- * - The inner loop iterates from 'a' to 'z' to print the alphabet.
- * - The _putchar('\n') is used once at the end of the inner loop to
- * print the required newline character.
+ * print_alphabet_x10 - Prints 10 times the alphabet, in lowercase.
  */
 void print_alphabet_x10(void)
 {
-    int count;
-    char letter;
+	int count = 0;
+	char letter;
 
-    // Outer loop: Repeats the alphabet printing 10 times
-    for (count = 0; count < 10; count++)
-    {
-        // Inner loop: Prints the alphabet from 'a' to 'z'
-        for (letter = 'a'; letter <= 'z'; letter++)
-        {
-            // First use of _putchar: Prints the current letter
-            _putchar(letter);
-        }
-        // Second use of _putchar: Prints a newline character after each repetition
-        _putchar('\n');
-    }
+	while (count++ <= 9)
+	{
+		for (letter = 'a'; letter <= 'z'; letter++)
+			_putchar(letter);
+		_putchar('\n');
+	}
 }
