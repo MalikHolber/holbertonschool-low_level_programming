@@ -3,7 +3,7 @@
  * Auth: Brennan D Baraban
  */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * swap_int - Swaps the values of two integers.
