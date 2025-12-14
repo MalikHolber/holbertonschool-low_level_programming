@@ -12,18 +12,27 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
-	{
-		char *temp;
+    // Return NULL if needle is an empty string
+    if (*needle == '\0')
+        return haystack;
 
-		temp = haystack;
-		while (*needle == *haystack)
-		{
-			haystack++, needle++;
-		}
-		if (*needle == '\0')
-			return (temp);
-		haystack++;
-	}
-	return (0);
+    while (*haystack)
+    {
+        char *temp_haystack = haystack;
+        char *temp_needle = needle;
+
+        // Compare characters one by one
+        while (*temp_needle && *temp_haystack == *temp_needle)
+        {
+            temp_haystack++;
+            temp_needle++;
+        }
+
+        // If we have reached the end of needle, it means we found the substring
+        if (*temp_needle == '\0')
+            return haystack;
+
+        haystack++;  // Move to the next character in haystack
+    }
+    return NULL;  // Return NULL if no match is found
 }
